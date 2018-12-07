@@ -62,7 +62,7 @@ font-5 = "WunconSiji:pixelsize=15"
 
 modules-left = workspaces filesystem appMenu
 modules-center = memory cpu wlan eth temperature battery
-modules-right = pulseaudio date powermenu
+modules-right = pulseaudio date
 
 tray-position = right
 tray-padding = 2
@@ -233,7 +233,7 @@ interval = 10
 date =
 date-alt = " %d-%m-%Y"
 
-time =  %H:%M
+time =  %H:%M 
 time-alt = 
 
 format-underline = #0a6cf5
@@ -243,11 +243,11 @@ label = %time% %date%
 [module/pulseaudio]
 type = internal/pulseaudio
 enable-scroll = true
-format-volume = <ramp-volume> <label>
+format-volume = <ramp-volume> <label-volume>
 
 
 label-muted = ""
-label-muted-foreground = ${colors.c2}
+label-muted-foreground = ${colors.c3}
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -348,14 +348,16 @@ menu-0-2 = 
 menu-0-2-exec = thunar /home/baptou
 menu-0-3 = 
 menu-0-3-exec = libreoffice &
-menu-0-4 = 
-menu-0-4-exec = chromium facebook.com &
-menu-0-5 = 
-menu-0-5-exec = chromium github.com/BaptisteHudyma &
-menu-0-6 = 
-menu-0---exec = chromium youtube.com/feed/subscriptions &
-menu-0-7 = 
-menu-0-7-exec = chromium stackoverflow.com/questions/ &
+menu-0-4 = 
+menu-0-4-exec = steam
+menu-0-5 = 
+menu-0-5-exec = chromium facebook.com &
+menu-0-6 = 
+menu-0-6-exec = chromium github.com/BaptisteHudyma &
+menu-0-7 = 
+menu-0-7-exec = chromium youtube.com/feed/subscriptions &
+menu-0-8 = 
+menu-0-8-exec = chromium stackoverflow.com/questions/ &
 
 
 
